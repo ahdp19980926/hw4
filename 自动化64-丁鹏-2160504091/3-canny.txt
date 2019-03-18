@@ -1,0 +1,9 @@
+close all;clear all;clc;
+f=imread('test3_corrupt.pgm');
+g=edge(f,'canny');
+subplot(1,2,1)
+imshow(g)
+title('canny')
+subplot(1,2,2)
+imshow(f)
+title('Ô­Í¼Ïñ')

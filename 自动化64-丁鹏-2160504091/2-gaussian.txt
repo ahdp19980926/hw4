@@ -1,0 +1,10 @@
+close all;clear all;clc;
+f=imread('test1.pgm');
+w=fspecial('gaussian',[7 7],1.5);
+g=imfilter(f,w,'replicate');
+subplot(1,2,1)
+imshow(g)
+title('¸ßË¹ÂË²¨test1-7*7-sigma=1.5')
+subplot(1,2,2)
+imshow(f)
+title('Ô­Í¼Ïñ')

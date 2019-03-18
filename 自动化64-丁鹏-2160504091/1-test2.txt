@@ -1,0 +1,9 @@
+close all;clear all;clc;
+f=imread('test2.tif');
+g=medfilt2(f,[3 3]);
+subplot(1,2,1)
+imshow(g)
+title('ÖÐÖµÂË²¨test2-3*3')
+subplot(1,2,2)
+imshow(f)
+title('Ô­Í¼Ïñ')

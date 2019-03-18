@@ -1,0 +1,10 @@
+close all;clear all;clc;
+f=imread('test2.tif');
+w=fspecial('gaussian',[3 3]);
+g=imfilter(f,w,'replicate');
+subplot(1,2,1)
+imshow(g)
+title('¸ßË¹ÂË²¨test1-3*3')
+subplot(1,2,2)
+imshow(f)
+title('Ô­Í¼Ïñ')
